@@ -1,0 +1,5 @@
+task_id,opus46,opus48_baseline,opus48_claude_md,opus48_full,winner,notes
+T05,37,42,44,43,opus48_claude_md,"4.6 相关段落质量高，但 CLI 输出混入其他任务；4.8+CLAUDE.md 的排查顺序更稳，先验真伪再拆流量。"
+T06,36,45,44,46,opus48_full,"4.8 baseline 已经不错；full 版本中文更像产品评审现场，能把点击率和信任风险讲清楚。"
+T07,36,44,43,45,opus48_full,"full 版本改写自然，触发条件/规则/验收较完整；4.6 相关段落可借鉴，但整体输出越界。"
+AVG,36.3,43.7,43.7,44.7,opus48_full,"最终采用 CLAUDE.md + output style，但对 output style 做瘦身，避免格式过重和过度解释。"
