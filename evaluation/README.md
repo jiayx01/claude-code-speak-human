@@ -4,7 +4,7 @@
 
 ## 文件
 
-- `eval_tasks.jsonl`：30 条数据产品经理常见任务。
+- `eval_tasks.jsonl`：30 条中文工作场景任务，当前偏产品和数据场景，可替换为你的真实任务。
 - `rubric.md`：10 个评分维度。
 - `pilot_scores.csv`：本项目第一轮 pilot 的人工评分结果。
 

@@ -21,7 +21,7 @@
 | A | Opus 4.6 原始输出，作为参考风格 |
 | B | Opus 4.8 原始输出，作为 baseline |
 | C | Opus 4.8 + `CLAUDE.md` |
-| D | Opus 4.8 + `CLAUDE.md` + `PM Chinese` output style |
+| D | Opus 4.8 + `CLAUDE.md` + `Human Chinese` output style |
 
 ## 评分维度
 
@@ -31,7 +31,7 @@
 2. 结论清晰度
 3. 逻辑连贯性
 4. 层次结构
-5. 产品经理可读性
+5. 用户可读性
 6. 技术准确性
 7. 信息密度
 8. 不确定性表达
@@ -54,7 +54,7 @@
 最优组合是：
 
 ```text
-Opus 4.8 + 短 CLAUDE.md + PM Chinese output style
+Opus 4.8 + 短 CLAUDE.md + Human Chinese output style
 ```
 
 它没有明显牺牲能力，但能改善中文表达的自然度、结论清晰度和可读性。

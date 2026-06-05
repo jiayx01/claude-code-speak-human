@@ -31,10 +31,10 @@ Claude 已经足够聪明，不需要把所有行为都写进提示词。
 mkdir -p ~/.claude/output-styles
 
 cp CLAUDE.md ~/.claude/CLAUDE.md
-cp output-styles/pm-chinese.md ~/.claude/output-styles/pm-chinese.md
+cp output-styles/human-chinese.md ~/.claude/output-styles/human-chinese.md
 ```
 
-然后在 Claude Code 中选择 `PM Chinese` output style。
+然后在 Claude Code 中选择 `Human Chinese` output style。
 
 ## 文件说明
 
@@ -42,10 +42,10 @@ cp output-styles/pm-chinese.md ~/.claude/output-styles/pm-chinese.md
 .
 ├── CLAUDE.md
 ├── output-styles/
-│   └── pm-chinese.md
+│   └── human-chinese.md
 ├── examples/
 │   ├── before-after.md
-│   └── data-product-manager.md
+│   └── professional-scenarios.md
 ├── evaluation/
 │   ├── eval_tasks.jsonl
 │   ├── pilot_scores.csv
@@ -61,8 +61,8 @@ cp output-styles/pm-chinese.md ~/.claude/output-styles/pm-chinese.md
 ## 适合谁
 
 - 中文 Claude Code 用户
-- 产品经理、数据产品经理、数据分析师
-- 经常让 Claude 写方案、总结、分析、代码解释的人
+- 产品、研发、运营、分析、设计、写作等中文工作场景
+- 经常让 Claude 写方案、总结、分析、代码解释、沟通文案的人
 - 觉得 Opus 能力很强，但中文表达“不够像人话”的人
 
 ## 不适合什么
@@ -81,9 +81,9 @@ cp output-styles/pm-chinese.md ~/.claude/output-styles/pm-chinese.md
 - Opus 4.6 原始输出
 - Opus 4.8 原始输出
 - Opus 4.8 + `CLAUDE.md`
-- Opus 4.8 + `CLAUDE.md` + `PM Chinese`
+- Opus 4.8 + `CLAUDE.md` + `Human Chinese`
 
-结果显示，`Opus 4.8 + CLAUDE.md + output style` 在中文自然度、结论清晰度、产品经理可读性上表现最好。
+结果显示，`Opus 4.8 + CLAUDE.md + output style` 在中文自然度、结论清晰度和可读性上表现最好。
 
 详细实验设计见 [docs/experiment-design.md](docs/experiment-design.md)。
 

@@ -13,7 +13,7 @@ TASK_FILE="${TASK_FILE:-$ROOT/evaluation/eval_tasks.jsonl}"
 WORD_LIMIT="${WORD_LIMIT:-350}"
 
 CLAUDE_MD="$(cat "$ROOT/CLAUDE.md")"
-OUTPUT_STYLE="$(cat "$ROOT/output-styles/pm-chinese.md")"
+OUTPUT_STYLE="$(cat "$ROOT/output-styles/human-chinese.md")"
 
 mkdir -p \
   "$ROOT/outputs/opus46" \
@@ -65,7 +65,7 @@ while IFS= read -r line; do
 
   id="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(x.id)' "$line")"
   task_prompt="$(node -e 'const x=JSON.parse(process.argv[1]); process.stdout.write(x.prompt)' "$line")"
-  prompt=$'请回答下面这个数据产品经理任务。\n\n实验约束：\n- 中文回答，'"$WORD_LIMIT"$' 字以内。\n- 开头先给核心判断。\n- 最多 5 个要点，避免大段铺陈。\n- 不展示完整隐藏推理链，只输出可读的判断依据、建议和风险。\n- 不要写成教科书，不要堆空泛原则。\n\n任务：'"$task_prompt"
+  prompt=$'请回答下面这个中文工作场景任务。\n\n实验约束：\n- 中文回答，'"$WORD_LIMIT"$' 字以内。\n- 开头先给核心判断。\n- 最多 5 个要点，避免大段铺陈。\n- 不展示完整隐藏推理链，只输出可读的判断依据、建议和风险。\n- 不要写成教科书，不要堆空泛原则。\n\n任务：'"$task_prompt"
 
   echo "Running $id ..."
   run_one "$MODEL_46" "" "$prompt" "$ROOT/outputs/opus46/$id.md"

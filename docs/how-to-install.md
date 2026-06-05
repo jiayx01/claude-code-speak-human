@@ -12,7 +12,7 @@ cp CLAUDE.md ~/.claude/CLAUDE.md
 
 ```bash
 mkdir -p ~/.claude/output-styles
-cp output-styles/pm-chinese.md ~/.claude/output-styles/pm-chinese.md
+cp output-styles/human-chinese.md ~/.claude/output-styles/human-chinese.md
 ```
 
 ## 3. 在 Claude Code 中启用
@@ -20,7 +20,7 @@ cp output-styles/pm-chinese.md ~/.claude/output-styles/pm-chinese.md
 打开 Claude Code 后，选择 output style：
 
 ```text
-PM Chinese
+Human Chinese
 ```
 
 ## 4. 验证效果
@@ -28,13 +28,13 @@ PM Chinese
 可以用下面这类问题测试：
 
 ```text
-业务要在房源列表加一个“急售”标签，说能提升点击率。
-请帮我准备需求评审时该问的问题和判断标准。
+我需要把一个复杂问题讲给非技术同事听。
+请帮我改成自然、清楚、容易理解的中文表达。
 ```
 
 理想输出应该：
 
 - 第一段先给判断
 - 中文自然，不像翻译稿
-- 能把点击率、供给真实性、用户信任和实验验证连起来
+- 逻辑顺序清楚，读者能知道为什么和下一步怎么做
 - 不会为了显得完整而写成论文
